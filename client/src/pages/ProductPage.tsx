@@ -11,7 +11,7 @@ import { Link } from "wouter";
 // Model Images
 const models = [
   { id: "model1", name: "Model 1", src: "/assets/models/model1.jpeg" },
-  { id: "model2", name: "Model 2", src: "/assets/models/model2.jpeg" }, // Using model1 as placeholder for model2 based on previous copy
+  { id: "model2", name: "Model 2", src: "/assets/models/model2.png" },
   { id: "model3", name: "Model 3", src: "/assets/models/model3.png" },
 ];
 
