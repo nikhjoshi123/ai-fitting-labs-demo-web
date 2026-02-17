@@ -204,11 +204,11 @@ export default function ProductPage() {
             </div>
 
             {/* Right Side: Interactive Content */}
-            <div className="w-full md:w-1/2 p-8 flex flex-col bg-black">
+            <div className="w-full md:w-1/2 p-8 flex flex-col bg-black overflow-y-auto">
               {step === "guide" && (
                 <div className="flex flex-col h-full animate-in fade-in slide-in-from-right-8 duration-700">
-                   <div className="flex-1 flex flex-col">
-                    <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-zinc-800 mb-8">
+                   <div className="flex-1 flex flex-col min-h-0">
+                    <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-zinc-800 mb-8 flex-shrink-0">
                       <img 
                         src="https://raw.githubusercontent.com/nikhjoshi123/vton-engine/main/AIFittingLabs-Assest.jpeg" 
                         alt="Fitting Guide"
@@ -221,11 +221,11 @@ export default function ProductPage() {
                     </div>
                   </div>
 
-                  <div className="space-y-4">
+                  <div className="space-y-4 mt-auto">
                     <div className="p-4 bg-zinc-900/80 rounded-2xl border border-zinc-800">
                       <p className="text-xs text-zinc-400 font-medium italic">"For your customers, use this on yourself. You have to buy this service to make it perfect for your own needs."</p>
                     </div>
-                    <Button className="w-full py-7 text-lg bg-white text-black hover:bg-zinc-200 font-bold rounded-2xl" onClick={() => setStep("selection")}>
+                    <Button className="w-full py-7 text-lg bg-white text-black hover:bg-zinc-200 font-bold rounded-2xl flex-shrink-0" onClick={() => setStep("selection")}>
                       Continue to Selection
                     </Button>
                   </div>
