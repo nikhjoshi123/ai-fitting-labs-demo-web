@@ -4,8 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite client",
-    "build": "vite build client --outDir ../dist",
-    "preview": "vite preview client"
+    "build": "vite build client --outDir ../dist"
   },
   "dependencies": {
     "react": "^18.3.1",
