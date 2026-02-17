@@ -4,10 +4,9 @@
   "type": "module",
   "license": "MIT",
 "scripts": {
-    "dev": "vite client/",
-    "build": "vite build client/ --outDir dist",
-    "preview": "vite preview client/",
-    "check": "tsc"
+    "dev": "vite client",
+    "build": "vite build client --outDir ../dist",
+    "preview": "vite preview client"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
