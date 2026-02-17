@@ -7,27 +7,16 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss()
-  ],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
       "@shared": path.resolve(__dirname, "shared"),
-      "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
   root: path.resolve(__dirname, "client"),
   build: {
-    // Vercel looks for 'dist' at the root level
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
   },
-  server: {
-    host: "0.0.0.0",
-    fs: {
-      strict: false // Relaxed for asset access
-    }
-  }
 });
